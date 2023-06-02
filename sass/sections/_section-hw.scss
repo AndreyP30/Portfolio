@@ -1,0 +1,28 @@
+.section-hw {
+  padding: 70px 0 90px;
+
+  /* Tablet */
+  @media (max-width: 1199px) {
+    padding: 60px 0 70px;
+  }
+
+  /* Tablet small */
+  @media (max-width: 899px) {
+    padding: 40px 0 40px;
+  }
+}
+
+.section-hw__title {
+  margin-bottom: 70px;
+  text-align: center;
+
+  /* Tablet */
+  @media (max-width: 1199px) {
+    margin-bottom: 50px;
+  }
+
+  /* Tablet small */
+  @media (max-width: 899px) {
+    margin-bottom: 40px;
+  }
+}

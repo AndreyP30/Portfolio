@@ -1,0 +1,32 @@
+.footer {
+  padding: 40px 0 50px;
+  background-color: #333;
+
+   /* Tablet */
+    @media (max-width: 1199px) {
+      padding: 30px 0 30px; 
+    }
+}
+
+.footer__content {
+  p + p {
+    margin-top: 10px;
+  }
+}
+
+.footer__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #b0b0b0;
+
+  a {
+    text-decoration-line: underline;
+    color: #FFFFFF;
+  }
+
+   /* Tablet */
+    @media (max-width: 1199px) {
+      font-size: 14px; 
+    }
+}

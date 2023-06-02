@@ -1,0 +1,15 @@
+.header-nav-small {
+  padding-top: 30px;
+  width: 100%;
+
+  /* Tablet */
+  @media (min-width: 900px) {
+    display: none;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
