@@ -1,0 +1,33 @@
+
+.button {
+    position: relative;
+    background-color: $button-color;
+    height: 64px;
+    line-height: 64px;
+    padding: 0 40px;
+
+    font-weight: 700;
+    font-size: 20px;
+    
+    border-radius: 50px;
+    white-space: nowrap;
+
+    &.button--second {
+        background-color: $button-color-second;
+    }
+
+    &:active {
+        top: 1px;
+    }
+
+    &:hover {
+        background-color: $button-color-hover;
+    }
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        height: 58px;
+        line-height: 58px;
+        padding: 0 26px;
+    }
+}

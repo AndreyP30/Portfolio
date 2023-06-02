@@ -1,0 +1,28 @@
+.socials {
+  display: flex;
+  column-gap: 30px;
+
+  /* Tablet */
+  @media (max-width: 1199px) {
+    column-gap: 20px;
+  }
+
+  /* Tablet small */
+  @media (max-width: 899px) {
+    img {
+      width: 38px;
+      height: 38px;
+    }
+
+    .section-contacts {
+      .socials {
+        column-gap: 30px;
+
+        /* Tablet small */
+        @media (max-width: 899px) {
+          column-gap: 20px;
+        }
+      }
+    }
+  }
+}

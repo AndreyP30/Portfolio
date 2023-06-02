@@ -1,0 +1,15 @@
+
+.text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+
+    &.text--copy {
+        color: #fff;
+    }
+
+     /* Tablet */
+      @media (max-width: 1199px) {
+        font-size: 14px; 
+      }
+}

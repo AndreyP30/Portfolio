@@ -1,0 +1,148 @@
+.hw-timeline {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* Tablet */
+  @media (max-width: 1199px) {
+    max-width: 774px;
+  }
+
+  /* Tablet small */
+  @media (max-width: 899px) {
+    max-width: 384px;
+  }
+
+  &-item {
+    position: relative;
+    // min-height: 168px;
+    width: 50%;
+    text-align: right;
+    padding-right: 51px;
+    padding-bottom: 60px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+      padding-right: 35px;
+      padding-bottom: 71px;
+    }
+
+    /* Tablet small */
+    @media (max-width: 899px) {
+      text-align: left;
+      padding-right: 0;
+      padding-left: 44px;
+      padding-bottom: 45px;
+      width: 100%;
+    }
+
+    &__title {
+      margin-bottom: 8px;
+
+      /* Tablet */
+      @media (max-width: 1199px) {
+        margin-bottom: 7px;
+      }
+
+      /* Tablet small */
+      @media (max-width: 899px) {
+        max-width: 245px;
+      }
+    }
+
+    span {
+      display: block;
+      margin-top: 8px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.3;
+
+      /* Tablet */
+      @media (max-width: 1199px) {
+        margin-top: 10px;
+        font-size: 14px;
+      }
+    }
+
+    // Round
+    &::before {
+      content: "";
+      position: absolute;
+      width: 34px;
+      height: 34px;
+      border: 4px solid #e1eef4;
+      border-radius: 50%;
+      top: 0;
+      right: -17px;
+
+      /* Tablet small */
+      @media (max-width: 899px) {
+        right: auto;
+        left: 0;
+      }
+    }
+
+    // line
+    &::after {
+      content: "";
+      position: absolute;
+      width: 4px;
+      top: 34px;
+      right: -2px;
+      bottom: 0;
+      background-color: #e1eef4;
+
+      /* Mobile */
+      @media (max-width: 899px) {
+        right: auto;
+        left: 15px;
+      }
+    }
+
+    // Round & Line even elements
+    &:nth-child(even) {
+      margin-left: auto;
+      text-align: left;
+      padding-left: 51px;
+      padding-right: 0;
+
+      &::before {
+        right: auto;
+        left: -17px;
+
+        /* Mobile */
+        @media (max-width: 899px) {
+          left: 0;
+        }
+      }
+
+      &::after {
+        right: auto;
+        left: -2px;
+
+        /* Mobile */
+        @media (max-width: 899px) {
+          left: 15px;
+        }
+      }
+
+      /* Tablet */
+      @media (max-width: 1199px) {
+        padding-left: 35px;
+      }
+
+      /* Tablet small */
+      @media (max-width: 899px) {
+        padding-left: 44px;
+      }
+    }
+
+    &:last-child::after {
+      display: none;
+    }
+  }
+}
